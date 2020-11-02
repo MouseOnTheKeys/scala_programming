@@ -136,4 +136,8 @@ project/plugins/project/
 !.vscode/extensions.json
 *.code-workspace
 
+### Ammonite ###
+.ammonite/
+.ammonite/*
+
 # End of https://www.toptal.com/developers/gitignore/api/scala,vscode,sbt,intellij,metals
