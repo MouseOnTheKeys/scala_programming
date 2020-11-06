@@ -21,4 +21,4 @@ while (i<args.length) {
 println();
 
 */
-// This is inperative stile of progeramming
+// This is imperative style of programming
