@@ -55,4 +55,5 @@ println(treasureMap(2))
 val romanNumeral = Map(
     1 -> "I", 2 -> "II", 3 -> "III", 4 -> "IV", 5 -> "V"
 )
+println(romanNumeral(4))
 // Given there are no imports when we say "Map" in the firs line we wil get the default: NOTE import scala.collection.immutable.Map
