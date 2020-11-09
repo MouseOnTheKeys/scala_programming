@@ -57,3 +57,27 @@ val romanNumeral = Map(
 )
 println(romanNumeral(4))
 // Given there are no imports when we say "Map" in the firs line we wil get the default: NOTE import scala.collection.immutable.Map
+
+// ANCHOR Functional Style of programing - try using val instead of var
+def printArgs(argd: Array[String]): Unit = {
+    var i = 0
+    while (i <args.length){
+        print(args(i))
+        i += 1
+    }
+}
+// lets transfor it into more functional approach
+def printArgs(args: Array[String]): Unit = {
+    dor (arg <- args)
+    println(arg)
+}
+// or THIS
+def printArgs(args: Array[String]): Unit = {
+    args.foreach(println)
+}
+// More than THIS
+def formatArgs(args: Array[String]) = args.mkString("\n")
+
+val res = formatArgs(Array("zero", "one","two"))
+assert(res == "zero\none\ntwo") //Scala`s assert method checks the passed Boolean if it is false, throws AssertionError if it is true it returns quietly.
+println(res)
