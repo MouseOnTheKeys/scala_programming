@@ -49,7 +49,8 @@ treasureMap += (2 -> "Find X on the ground.")
 treasureMap += (3 -> "Dig.") // THIS -> method which you can invoke on any object in Scala program returns a two-element tuplecontaining the key and the value
 treasureMap += (4 -> "Dig more.")
 println(treasureMap(2))
-/* The explicit type of parameterization "[Int, String]" are requiredbecause without it any values passed to the factory method, the compailer can infer the type parameters.
+/* 
+The explicit type of parameterization "[Int, String]" are requiredbecause without it any values passed to the factory method, the compailer can infer the type parameters.
 */
 // Immutable Map - no import is necessary
 val romanNumeral = Map(
