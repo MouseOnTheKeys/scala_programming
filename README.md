@@ -1,8 +1,8 @@
 # Scala_Programming
-### Programming in Scala - Third Edition  
-&nbsp; Martin Odesky  
-&nbsp; Lex Spoon   
-&nbsp; Bill Venneres  
+### Programming in Scala - Third Edition
+&nbsp; Martin Odesky
+&nbsp; Lex Spoon
+&nbsp; Bill Venneres
 
 # Scala_EFPL
 
