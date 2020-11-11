@@ -1,10 +1,10 @@
 # Scala_Programming
-Programming in Scala - Third Edition  
-/t	Martin Odesky  
-/t	Lex Spoon   
-/t	Bill Venneres  
+### Programming in Scala - Third Edition  
+&nbsp; Martin Odesky  
+&nbsp; Lex Spoon   
+&nbsp; Bill Venneres  
 
 # Scala_EFPL
 
-####Online course from **École Polytechnique Fédérale de Lausanne**
+### Online course from **École Polytechnique Fédérale de Lausanne**
 from creator of Scala progrtamming **Martin Odesky**
