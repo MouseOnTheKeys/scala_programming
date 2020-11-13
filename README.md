@@ -7,4 +7,4 @@
 # Scala_EFPL
 
 ### Online course from **École Polytechnique Fédérale de Lausanne**
-from creator of Scala progrtamming **Martin Odesky**
+from creator of Scala programming **Martin Odesky**
