@@ -76,24 +76,39 @@ The class is called the companion class of the singleton object.
 Aclass and its companion objects can access each other`s private members
  */
 /*
-The ChecksumAccumulator singleton object has one methodnamed calculate, wich takes the single string and calculates a checksum for charachters in the string.
-It also hs one private field cache, a mutable map im wich previusly calculated checksums are cached.
+The ChecksumAccumulator singleton object has one method named calculate, wich takes the single string and calculates a checksum for charachters in the string.
+It also has one private field cache, a mutable map in wich previously calculated checksums are cached.
 */
 // in file ChecksumAccumulator.scala
-import scala.collection.mutable
+
+import scala.collection.mutable.Map
 
 object ChecksumAccumulator {
-    private val cache = mutable.Map.empty[String, Int]
 
-    def calculate(s: String): Int =
-    if (cache.comtains(s)) // checks the cache to see, if the passed string is already contained as a key in map.
-        cache(s) // if so returns String from cache or ..
+private val cache = Map[String, Int]()
+
+  def calculate(s: String): Int =
+    if (cache.contains(s))
+      cache(s)
     else {
-        val acc = new ChecksumAccumulator //
-        for (c <- s)
-            acc.add(c.toByte)
-        val cs = acc.checksum()
-        cache += (s -> cs)
-        cs
+      val acc = new ChecksumAccumulator
+      for (c <- s)
+        acc.add(c.toByte)
+      val cs = acc.checksum()
+      cache += (s -> cs)
+      cs
     }
 }
+
+ChecksumAccumulator.calculate("Every value is an object ...")
+/*
+A singletone object is more thatn holder for static methods, however. It is a first-class object. You can think of singleton objects as a "name tag"
+attached to a object. Defining a singleton object doesn't define a tyoe at the Scala level of abstraction.
+Rather the type named ChecksumAcummulator is defined by singleton object companion class.
+One difference between singleton object and clasess is that singleton object cannot take parameters whereas classes can.
+A singletone object that does not share the same name with a companion class is called standalone object.
+*/
+
+// A Scala application
+
+// To run Scala program, we must suppl the name of a standalone singleton object with main method, that takes an Array[String], and has a result type of Unit
