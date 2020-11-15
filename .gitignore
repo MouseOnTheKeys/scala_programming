@@ -139,5 +139,6 @@ project/plugins/project/
 ### Ammonite ###
 .ammonite/
 .ammonite/*
-
+### SBT
+.bsp/
 # End of https://www.toptal.com/developers/gitignore/api/scala,vscode,sbt,intellij,metals
