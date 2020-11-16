@@ -45,17 +45,17 @@ object RecFun extends RecFunInterface {
    * Exercise 3
    */
   def countChange(money: Int, coins: List[Int]): Int = {
-    def countChangeRec(currentMoney: Int, currentCoins: List[Int]): Int = {
-      if (currentMoney == money)
+    def countChangeReccurent(curMoney: Int, curCoins: List[Int]): Int = {
+      if (curMoney == money)
         1
-      else if (currentMoney > money || currentCoins.isEmpty)
+      else if (curMoney > money || curCoins.isEmpty)
         0
       else
-        countChangeRec(currentMoney + currentCoins.head, currentCoins) +
-          countChangeRec(currentMoney, currentCoins.tail)
+        countChangeReccurent(curMoney + curCoins.head, curCoins) +
+          countChangeRecccurent(curMoney, curCoins.tail)
     }
 
-    countChangeRec(0, coins)
+    countChangeReccurent(0, coins)
   }
 }
 
