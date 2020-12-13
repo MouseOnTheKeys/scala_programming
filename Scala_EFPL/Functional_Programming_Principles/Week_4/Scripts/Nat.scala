@@ -22,6 +22,3 @@ class Succ(n: Nat) extends Nat {
     def +(that: Nat) = new Succ(n + that)
     def -(that: Nat) = if (that.isZero) this else n - that.predecessor
 }
-
-
-
