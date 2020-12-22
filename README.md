@@ -9,4 +9,4 @@
 ### Online course from **École Polytechnique Fédérale de Lausanne**
 from creator of Scala programming **Martin Odesky**
 
-<iframe src="https://www.coursera.org/api/certificate.v1/pdf/L6PBU7V6Z2S7" style="width:1000px; height:800px;" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.coursera.org/account/accomplishments/certificate/L6PBU7V6Z2S7" style="width:1000px; height:800px;" frameborder="0" allowfullscreen></iframe>
