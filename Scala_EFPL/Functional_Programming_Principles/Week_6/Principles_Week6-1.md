@@ -1,3 +1,3 @@
 ### Weeek 6
 
-#### Lecture 6.1
+#### Lecture 6.1 -
